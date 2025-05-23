@@ -34,3 +34,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## ShadCN UI CLI
+```bash
+npm install lucide-react
+npx shadcn@latest init
+```
+### Adding Components
+To add components like `card`, `popover`,  `progress`, `tabs`, `badge`, `avatar`, `button`, `label`, `textarea`, `dropdown-menu`, `table`, `select`, `calendar`, `checkbox` and `input` use:
+```bash
+npx shadcn@latest add card progress tabs avatar badge button label input textarea dropdown-menu checkbox table calendar popover select
+```
+### to check network ip to bind with port and view page
+```bash
+ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}' 
+```
